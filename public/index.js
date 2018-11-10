@@ -38,12 +38,12 @@ dbRefComment.on('value', snap => {
 // TODO:        Write a function that takes the object
 //              returned by the parse and creates a template
 //              literal div that formats the comment.
-//              Something like: `
-//              <div>
+//              Something like...?
+//              ` <div>
 //                  <div>${users.username}</div>
 //                  <div>${users.email}</div>
 //                  <div>${users.comment}</div>
-//              </div> `
+//              </div> ` 
 
 // TODO:        Modify the below list code so that the above
 //              template literal is added as the innerHTML
