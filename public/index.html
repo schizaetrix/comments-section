@@ -1,0 +1,52 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Firebase Comments</title>
+</head>
+<body class="d-flex" style="background-color: thistle; flex-direction: column;">
+
+<header class="d-flex" style="flex-direction: column; align-items: center; background-color: lavender; width: 100%;">
+    <h1><a href="https://firebase.google.com/docs/database/web/start">Learning Firebase Realtime Database</a></h1>
+</header>
+<section class="main-content d-flex" style="flex-direction: column; align-items: center;">
+    <form class="login-form d-flex" id="comment-form" style="flex-direction: column; margin-top: 20px; background-color: white; border: solid; padding: 10px;">
+        <h1 class="d-flex">Leave a comment!</h1>
+        <div class="form-group purple-border">
+            <label for="Textarea">Username</label>
+            <input type="text" class="form-control" id="username-text" placeholder="Username here" rows="1">
+        </div>
+        <div class="form-group purple-border">
+            <label for="Textarea">Email</label>
+            <input type="text" class="form-control" id="email-text" placeholder="Email here" rows="1">
+        </div>
+        <div class="form-group purple-border">
+            <label for="Textarea">Comment</label>
+            <textarea class="form-control" id="comment-text"  placeholder="Type comment here" rows="3"></textarea>
+        </div>
+        <div class="action-row d-flex" style="margin-bottom: 10px; align-self: center;">
+            <button class="primary-btn" id="comment-button" style="background-color: purple; color: white;">Submit</button>
+        </div>
+    </form>
+    <form class="login-form d-flex" style="flex-direction: column; margin-top: 20px; background-color: white; border: solid; padding: 10px;">
+        <h1 class="d-flex">Discussion area</h1>
+        <div class="form-group purple-border">
+            <div id="comment-area">
+
+            </div>
+        </div>
+        <ul id="list">
+            <li>Something should go here</li>
+        
+        </ul>
+    </form>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
